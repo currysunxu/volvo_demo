@@ -1,3 +1,5 @@
+const allure = require('allure-commandline')
+
 exports.config = {
 
     specs: [
@@ -34,7 +36,7 @@ exports.config = {
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
-        maxInstances: 2,
+        maxInstances: 1,
         //
         browserName: 'chrome',
         acceptInsecureCerts: true,
@@ -42,14 +44,25 @@ exports.config = {
             args: [
                 '--no-sandbox',
                 '--disable-infobars',
+                '--headless',
                 '--disable-gpu',
                 '--window-size=1440,735'
             ],
         }
-        // If outputDir is provided WebdriverIO can capture driver session logs
-        // it is possible to configure which logTypes to include/exclude.
-        // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
-        // excludeDriverLogs: ['bugreport', 'server'],
+    },{
+        maxInstances: 1,
+        //
+        browserName: 'chrome',
+        acceptInsecureCerts: true,
+        'goog:chromeOptions': {
+            args: [
+                '--no-sandbox',
+                '--disable-infobars',
+                '--headless',
+                '--disable-gpu',
+                '--window-size=1440,735'
+            ],
+        }
     }],
     //
     // ===================
@@ -85,21 +98,21 @@ exports.config = {
     baseUrl: 'https://www.volvocars.com',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 1000,
+    waitforTimeout: 5000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
-    connectionRetryTimeout: 5200,
+    connectionRetryTimeout: 8000,
     //
     // Default request retries count
-    connectionRetryCount: 1,
+    connectionRetryCount: 3,
     //
     // Test runner services
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: ['chromedriver'],
-    
+
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks
@@ -120,10 +133,10 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec',['allure', {outputDir: 'allure-results'}]],
+    reporters: [['spec',{outputDir: 'spec-results'}],['allure', {outputDir: 'allure-results'}],['junit',{outputDir: 'junit-reports'}]],
 
 
-    
+
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
@@ -256,26 +269,26 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {<Object>} results object containing test results
      */
-    // onComplete: function(exitCode, config, capabilities, results) {
-    //     const reportError = new Error('Could not generate Allure report')
-    //     const generation = allure(['generate', 'allure-results', '--clean'])
-    //     return new Promise((resolve, reject) => {
-    //         const generationTimeout = setTimeout(
-    //             () => reject(reportError),
-    //             5000)
-    //
-    //         generation.on('exit', function(exitCode) {
-    //             clearTimeout(generationTimeout)
-    //
-    //             if (exitCode !== 0) {
-    //                 return reject(reportError)
-    //             }
-    //
-    //             console.log('Allure report successfully generated')
-    //             resolve()
-    //         })
-    //     })
-    // }
+    onComplete: function(exitCode, config, capabilities, results) {
+        const reportError = new Error('Could not generate Allure report')
+        const generation = allure(['generate', 'allure-results', '--clean'])
+        return new Promise((resolve, reject) => {
+            const generationTimeout = setTimeout(
+                () => reject(reportError),
+                5000)
+
+            generation.on('exit', function(exitCode) {
+                clearTimeout(generationTimeout)
+
+                if (exitCode !== 0) {
+                    return reject(reportError)
+                }
+
+                console.log('Allure report successfully generated')
+                resolve()
+            })
+        })
+    }
     /**
     * Gets executed when a refresh happens.
     * @param {String} oldSessionId session ID of the old session

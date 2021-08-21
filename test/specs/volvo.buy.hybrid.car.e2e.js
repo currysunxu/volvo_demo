@@ -4,6 +4,7 @@ const HomePage = require('../pageobjects/home.page');
 describe('Volvo buy hybrid car testing', () => {
 
     before( () => {
+        HomePage.open();
         browser.deleteCookies()
         HomePage.cookie_settings.waitForDisplayed()
         HomePage.accept_submit()

@@ -2,6 +2,6 @@ FROM ianwalter/puppeteer:latest
 WORKDIR /app
 ADD . /app
 
-RUN npm install
+RUN yarn install
 
-CMD npx wdio
+CMD yarn wdio
