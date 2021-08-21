@@ -26,19 +26,20 @@ These tests are developed in JavaScript with [WebDriverIO V7](http://webdriver.i
 
 -   node >= 14.x.x 
 -   npm >= 6.14.x  
+-   yarn >= 1.22.x
 
 ## Getting Started
 
 Install the dependencies:
 
 ```bash
-npm install
+yarn install or npm install
 ```
 
 Run e2e tests:
 
 ```bash
-npx wdio run ./wdio.conf.js
+yarn wdio run ./wdio.conf.js
 ```
 Run docker build:
 
