@@ -30,6 +30,7 @@ These tests are developed in JavaScript with [WebDriverIO V7](http://webdriver.i
 -   node >= 14.x.x 
 -   npm >= 6.14.x  
 -   yarn >= 1.22.x
+-   chrome == 84.0.x
 
 ## Getting Started
 
