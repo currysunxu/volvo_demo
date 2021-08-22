@@ -1,6 +1,5 @@
 const HomePage = require('../pageobjects/home.page');
 
-
 describe('Volvo ui text validation', () => {
 
     beforeEach(  () => {
@@ -12,7 +11,6 @@ describe('Volvo ui text validation', () => {
 
 
     it('check title text', async () => {
-
         await expect(HomePage.subTitle).toBeExisting()
         await expect(HomePage.subTitle).toHaveTextContaining("After we introduced the 3-point safety belt, we faced a world of criticism.")
         await expect(HomePage.mainTitle).toBeExisting()

@@ -10,7 +10,8 @@ These tests are developed in JavaScript with [WebDriverIO V7](http://webdriver.i
 -   Build Docker image by Dockfile
 -   Parallel execution
 -   Page Object Pattern
--   Spec,Allure,Junit report
+-   Test report suporrt Spec,Junit,Allure
+-   Kubernetes selenium Grid (just idea)
 
 ## Framework Structure
 
@@ -55,5 +56,16 @@ docker run -it mydemo
 ## Reports
 
 -   define spec, junit , allure report
+
+##
+Kubernetes distribute testing
+To run command by kubectl to depoly hub and nodes and need to adjust hubUrl in test
+-   kubectl create -f deploy.yml
+-   kubectl describe deploy
+-   kubectl create -f service.yml
+-   kubectl describe service
+-   kubectl create -f repchrome.yml
+-   kubectl create -f repff.yml
+
 
 

@@ -1,4 +1,4 @@
-const allure = require('allure-commandline')
+const allure = require('@wdio/allure-reporter').default;
 
 exports.config = {
 
@@ -25,7 +25,7 @@ exports.config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 2,
+    maxInstances: 5,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -36,21 +36,7 @@ exports.config = {
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
-        maxInstances: 1,
-        //
-        browserName: 'chrome',
-        acceptInsecureCerts: true,
-        'goog:chromeOptions': {
-            args: [
-                '--no-sandbox',
-                '--disable-infobars',
-                '--headless',
-                '--disable-gpu',
-                '--window-size=1440,735'
-            ],
-        }
-    },{
-        maxInstances: 1,
+        maxInstances: 5,
         //
         browserName: 'chrome',
         acceptInsecureCerts: true,
@@ -133,8 +119,11 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: [['spec',{outputDir: 'spec-results'}],['allure', {outputDir: 'allure-results'}],['junit',{outputDir: 'junit-reports'}]],
-
+    reporters: ['spec', ['allure', {
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: false,
+        outputDir: 'allure-results'
+    }], ['junit', {outputDir: 'junit-reports'}]],
 
 
     //
@@ -186,8 +175,32 @@ exports.config = {
      * @param {Array.<String>} specs        List of spec file paths that are to be run
      * @param {Object}         browser      instance of created browser/device session
      */
-    // before: function (capabilities, specs) {
+    before: function (capabilities, specs) {
+        global.allure = allure;
+    },
+    /**
+     * Runs before a WebdriverIO command gets executed.
+     * @param {String} commandName hook command name
+     * @param {Array} args arguments that command would receive
+     */
+    // beforeCommand: function (commandName, args) {
     // },
+    /**
+     * Hook that gets executed before the suite starts
+     * @param {Object} suite suite details
+     */
+    beforeSuite: function (suite) {
+        allure.addFeature(suite.name);
+    },
+    /**
+     * Function to be executed before a test (in Mocha/Jasmine) starts.
+     */
+    beforeTest: function (test, context) {
+        allure.addEnvironment("BROWSER", browser.capabilities.browserName);
+        allure.addEnvironment("BROWSER_VERSION", browser.capabilities.version);
+        allure.addEnvironment("PLATFORM", browser.capabilities.platform);
+
+    },
     /**
      * Runs before a WebdriverIO command gets executed.
      * @param {String} commandName hook command name
@@ -269,31 +282,20 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {<Object>} results object containing test results
      */
-    onComplete: function(exitCode, config, capabilities, results) {
-        const reportError = new Error('Could not generate Allure report')
-        const generation = allure(['generate', 'allure-results', '--clean'])
-        return new Promise((resolve, reject) => {
-            const generationTimeout = setTimeout(
-                () => reject(reportError),
-                5000)
-
-            generation.on('exit', function(exitCode) {
-                clearTimeout(generationTimeout)
-
-                if (exitCode !== 0) {
-                    return reject(reportError)
-                }
-
-                console.log('Allure report successfully generated')
-                resolve()
-            })
-        })
+    afterTest: function(test, context, { error, result, duration, passed, retries }) {
+        if (error !== undefined) {
+            try {
+                browser.takeScreenshot();
+            } catch {
+                console.log('>> Capture Screenshot Failed!');
+            }
+        }
     }
     /**
-    * Gets executed when a refresh happens.
-    * @param {String} oldSessionId session ID of the old session
-    * @param {String} newSessionId session ID of the new session
-    */
+     * Gets executed when a refresh happens.
+     * @param {String} oldSessionId session ID of the old session
+     * @param {String} newSessionId session ID of the new session
+     */
     //onReload: function(oldSessionId, newSessionId) {
     //}
 }

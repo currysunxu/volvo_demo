@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Volvo ui text validation" timestamp="2021-08-21T23:39:25" time="3.774" tests="2" failures="0" errors="0" skipped="0">
+  <testsuite name="Volvo ui text validation" timestamp="2021-08-22T16:17:06" time="4.773" tests="2" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="Volvo ui text validation"/>
       <property name="capabilities" value="chrome.92_0_4515_159.macosx"/>
       <property name="file" value="./test/specs/volvo.ui.js"/>
     </properties>
-    <testcase classname="chrome.92_0_4515_159.macosx.Volvo ui text validation" name="check title text" time="3.046">
+    <testcase classname="chrome.92_0_4515_159.macosx.Volvo ui text validation" name="check title text" time="3.443">
       <system-out><![CDATA[
-COMMAND: DELETE /session/f006e07984706d9b937ec9b2b3b5f51e/cookie - {}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/element - {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/element - {"using":"css selector","value":"button[title=\"Accept\"]"}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/url - {"url":"https://www.volvocars.com/intl/v/car-safety/a-million-more"}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/element - {"using":"css selector","value":"div[id=\"ModelIntro-1\"] p"}
+COMMAND: DELETE /session/4078bc5ce16f2c46a147b9631f437b46/cookie - {}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/element - {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/element - {"using":"css selector","value":"button[title=\"Accept\"]"}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/url - {"url":"https://www.volvocars.com/intl/v/car-safety/a-million-more"}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/element - {"using":"css selector","value":"div[id=\"ModelIntro-1\"] p"}
 RESULT: {}
-RESULT: {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/element - {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
 RESULT: {"using":"css selector","value":"button[title=\"Accept\"]"}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/elements - {"using":"css selector","value":"button[title=\"Accept\"]"}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/elements - {"using":"css selector","value":"button[title=\"Accept\"]"}
+RESULT: {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/element - {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
 RESULT: {"url":"https://www.volvocars.com/intl/v/car-safety/a-million-more"}
 RESULT: {"using":"css selector","value":"div[id=\"ModelIntro-1\"] p"}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/elements - {"using":"css selector","value":"div[id=\"ModelIntro-1\"] p"}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/elements - {"using":"css selector","value":"div[id=\"ModelIntro-1\"] p"}
+RESULT: {"using":"css selector","value":"button[title=\"Accept\"]"}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/element - {"using":"css selector","value":"button[title=\"Accept\"]"}
 RESULT: {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"55f22352-eb71-433e-8a12-ebd46d4ceee7","ELEMENT":"55f22352-eb71-433e-8a12-ebd46d4ceee7"}]}
-RESULT: {"using":"css selector","value":"button[title=\"Accept\"]"}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/element - {"using":"css selector","value":"button[title=\"Accept\"]"}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"5cbec25b-f676-4c24-8bc2-9ec708dac442","ELEMENT":"5cbec25b-f676-4c24-8bc2-9ec708dac442"}]}
 RESULT: {"using":"css selector","value":"div[id=\"ModelIntro-1\"] p"}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/element - {"using":"css selector","value":"div[id=\"ModelIntro-1\"] p"}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"55f22352-eb71-433e-8a12-ebd46d4ceee7","ELEMENT":"55f22352-eb71-433e-8a12-ebd46d4ceee7"}]}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/element - {"using":"css selector","value":"div[id=\"ModelIntro-1\"] p"}
 RESULT: {"using":"css selector","value":"button[title=\"Accept\"]"}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/element/02578f3e-b33d-45f6-a2ea-4f9032b1e2ba/click - {}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/element/1ab38152-be99-4ae7-8582-5001faed6294/click - {}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"5cbec25b-f676-4c24-8bc2-9ec708dac442","ELEMENT":"5cbec25b-f676-4c24-8bc2-9ec708dac442"}]}
 RESULT: {"using":"css selector","value":"div[id=\"ModelIntro-1\"] p"}
-COMMAND: GET /session/f006e07984706d9b937ec9b2b3b5f51e/element/1cbe68fb-f3be-4c5f-9354-c947e5d7d662/text - {}
+COMMAND: GET /session/4078bc5ce16f2c46a147b9631f437b46/element/db710020-962d-4316-b307-ff498bfdbd12/text - {}
 RESULT: {}
 RESULT: {}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/element - {"using":"css selector","value":"div[id=\"ModelIntro-1\"] h2"}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/element - {"using":"css selector","value":"div[id=\"ModelIntro-1\"] h2"}
 RESULT: {"using":"css selector","value":"div[id=\"ModelIntro-1\"] h2"}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/elements - {"using":"css selector","value":"div[id=\"ModelIntro-1\"] h2"}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/elements - {"using":"css selector","value":"div[id=\"ModelIntro-1\"] h2"}
 RESULT: {"using":"css selector","value":"div[id=\"ModelIntro-1\"] h2"}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/element - {"using":"css selector","value":"div[id=\"ModelIntro-1\"] h2"}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/element - {"using":"css selector","value":"div[id=\"ModelIntro-1\"] h2"}
 RESULT: {"using":"css selector","value":"div[id=\"ModelIntro-1\"] h2"}
-COMMAND: GET /session/f006e07984706d9b937ec9b2b3b5f51e/element/71d602cb-6b1a-42ce-a155-ccbf9fb836ce/text - {}
+COMMAND: GET /session/4078bc5ce16f2c46a147b9631f437b46/element/e9d31dc2-30cb-4612-899e-9d0288f88016/text - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.92_0_4515_159.macosx.Volvo ui text validation" name="check video text" time="0.715">
+    <testcase classname="chrome.92_0_4515_159.macosx.Volvo ui text validation" name="check video text" time="1.32">
       <system-out><![CDATA[
-COMMAND: DELETE /session/f006e07984706d9b937ec9b2b3b5f51e/cookie - {}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/element - {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/element - {"using":"css selector","value":"button[title=\"Accept\"]"}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/url - {"url":"https://www.volvocars.com/intl/v/car-safety/a-million-more"}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/element - {"using":"css selector","value":"div[class=\"a cn\"] > button[type=\"button\"]"}
+COMMAND: DELETE /session/4078bc5ce16f2c46a147b9631f437b46/cookie - {}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/element - {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/element - {"using":"css selector","value":"button[title=\"Accept\"]"}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/url - {"url":"https://www.volvocars.com/intl/v/car-safety/a-million-more"}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/element - {"using":"css selector","value":"div[class=\"a cn\"] > button[type=\"button\"]"}
 RESULT: {}
 RESULT: {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"55f22352-eb71-433e-8a12-ebd46d4ceee7","ELEMENT":"55f22352-eb71-433e-8a12-ebd46d4ceee7"}]}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"5cbec25b-f676-4c24-8bc2-9ec708dac442","ELEMENT":"5cbec25b-f676-4c24-8bc2-9ec708dac442"}]}
 RESULT: {"using":"css selector","value":"button[title=\"Accept\"]"}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/element/02578f3e-b33d-45f6-a2ea-4f9032b1e2ba/click - {}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/element/1ab38152-be99-4ae7-8582-5001faed6294/click - {}
 RESULT: {"url":"https://www.volvocars.com/intl/v/car-safety/a-million-more"}
 RESULT: {"using":"css selector","value":"div[class=\"a cn\"] > button[type=\"button\"]"}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/elements - {"using":"css selector","value":"div[class=\"a cn\"] > button[type=\"button\"]"}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/element - {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/element - {"using":"css selector","value":"button[title=\"Accept\"]"}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/elements - {"using":"css selector","value":"div[class=\"a cn\"] > button[type=\"button\"]"}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/element - {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/element - {"using":"css selector","value":"button[title=\"Accept\"]"}
 RESULT: {"using":"css selector","value":"div[class=\"a cn\"] > button[type=\"button\"]"}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/element - {"using":"css selector","value":"div[class=\"a cn\"] > button[type=\"button\"]"}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/element - {"using":"css selector","value":"div[class=\"a cn\"] > button[type=\"button\"]"}
 RESULT: {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"3e6eb382-520e-4214-bf39-2e087dfc764e","ELEMENT":"3e6eb382-520e-4214-bf39-2e087dfc764e"}]}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"cdec7785-3987-4d97-ba12-17be3b7f4961","ELEMENT":"cdec7785-3987-4d97-ba12-17be3b7f4961"}]}
 RESULT: {"using":"css selector","value":"button[title=\"Accept\"]"}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/element/02578f3e-b33d-45f6-a2ea-4f9032b1e2ba/click - {}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/element/1ab38152-be99-4ae7-8582-5001faed6294/click - {}
 RESULT: {"using":"css selector","value":"div[class=\"a cn\"] > button[type=\"button\"]"}
-COMMAND: GET /session/f006e07984706d9b937ec9b2b3b5f51e/element/dc433a68-75c6-45b7-be3e-35d5f2621d09/text - {}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"3e6eb382-520e-4214-bf39-2e087dfc764e","ELEMENT":"3e6eb382-520e-4214-bf39-2e087dfc764e"}]}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/element - {"using":"css selector","value":"button[title=\"Accept\"]"}
+COMMAND: GET /session/4078bc5ce16f2c46a147b9631f437b46/element/c1a5e3d6-c278-469b-8119-95a9b19e71f1/text - {}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"cdec7785-3987-4d97-ba12-17be3b7f4961","ELEMENT":"cdec7785-3987-4d97-ba12-17be3b7f4961"}]}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/element - {"using":"css selector","value":"button[title=\"Accept\"]"}
 RESULT: {}
 RESULT: {"using":"css selector","value":"button[title=\"Accept\"]"}
-COMMAND: POST /session/f006e07984706d9b937ec9b2b3b5f51e/element/5d0b4c59-a55a-45d5-8ae5-6c018e0b39d8/click - {}
-COMMAND: DELETE /session/f006e07984706d9b937ec9b2b3b5f51e - {}
+COMMAND: POST /session/4078bc5ce16f2c46a147b9631f437b46/element/fcba8838-cc01-4902-ba0e-650cf81f8a28/click - {}
+COMMAND: DELETE /session/4078bc5ce16f2c46a147b9631f437b46 - {}
 RESULT: {}
 RESULT: {}
 ]]></system-out>

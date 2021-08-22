@@ -4,7 +4,7 @@ kind: ReplicationController
 
 metadata:
 
-  name: selenium-node-chrome-rep
+  name: selenium-node-firefox-rep
 
 spec:
 
@@ -12,23 +12,23 @@ spec:
 
   selector:
 
-    app: selenium-node-chrome
+    app: selenium-node-firefox
 
   template:
 
     metadata:
 
-      name: wedriverio-node-chrome
+      name: wedriverio-node-firefox
 
       labels:
 
-        app: wedriverio-node-chrome
+        app: wedriverio-node-firefox
 
     spec:
 
       containers:
 
-        - name: wedriverio-node-chrome
+        - name: wedriverio-node-firefox
 
           image: mydemo/node-firefox      #image from docker build
 

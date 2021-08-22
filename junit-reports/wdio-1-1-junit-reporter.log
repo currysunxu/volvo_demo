@@ -1,95 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Volvo buy hybrid car testing" timestamp="2021-08-21T23:39:09" time="4.765" tests="3" failures="0" errors="0" skipped="0">
+  <testsuite name="Volvo buy hybrid car testing" timestamp="2021-08-22T01:03:12" time="7.539" tests="3" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="Volvo buy hybrid car testing"/>
       <property name="capabilities" value="chrome.92_0_4515_159.macosx"/>
       <property name="file" value="./test/specs/volvo.buy.hybrid.car.e2e.js"/>
     </properties>
-    <testcase classname="chrome.92_0_4515_159.macosx.Volvo buy hybrid car testing" name="check buy s90 by Our cars entry" time="4.318">
+    <testcase classname="chrome.92_0_4515_159.macosx.Volvo buy hybrid car testing" name="check buy s90 by Our cars entry" time="6.346">
       <system-out><![CDATA[
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
 RESULT: {}
-RESULT: {"using":"css selector","value":"button[title=\"Accept\"]"}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/elements - {"using":"css selector","value":"button[title=\"Accept\"]"}
 RESULT: {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/element - {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/element - {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
 RESULT: {"url":"https://www.volvocars.com/intl/v/car-safety/a-million-more"}
 RESULT: {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ce62b1a7-4481-49bb-bdfb-de38b1dbd027","ELEMENT":"ce62b1a7-4481-49bb-bdfb-de38b1dbd027"}]}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1ff9214b-4aac-4c95-a4a8-0837df7611bb","ELEMENT":"1ff9214b-4aac-4c95-a4a8-0837df7611bb"}]}
 RESULT: {"using":"css selector","value":"button[title=\"Accept\"]"}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/element - {"using":"css selector","value":"button[title=\"Accept\"]"}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/element/95749d16-5a78-4f92-a38b-9c9c90ad1534/click - {}
 RESULT: {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"7c0f465e-9d31-42f0-a738-c63b5184c74d","ELEMENT":"7c0f465e-9d31-42f0-a738-c63b5184c74d"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ce62b1a7-4481-49bb-bdfb-de38b1dbd027","ELEMENT":"ce62b1a7-4481-49bb-bdfb-de38b1dbd027"}]}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-RESULT: {"using":"css selector","value":"button[title=\"Accept\"]"}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/element/e64df7df-bd00-44aa-a03a-1671796112c6/click - {}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"7c0f465e-9d31-42f0-a738-c63b5184c74d","ELEMENT":"7c0f465e-9d31-42f0-a738-c63b5184c74d"}]}
-RESULT: {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/elements - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"51face94-1af4-4e4d-8343-b6e71f18da48","ELEMENT":"51face94-1af4-4e4d-8343-b6e71f18da48"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1ff9214b-4aac-4c95-a4a8-0837df7611bb","ELEMENT":"1ff9214b-4aac-4c95-a4a8-0837df7611bb"}]}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
 RESULT: {}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"51face94-1af4-4e4d-8343-b6e71f18da48","ELEMENT":"51face94-1af4-4e4d-8343-b6e71f18da48"}]}
 RESULT: {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/elements - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
 RESULT: {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/element/ce62b1a7-4481-49bb-bdfb-de38b1dbd027/click - {}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
+RESULT: {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/element/1ff9214b-4aac-4c95-a4a8-0837df7611bb/click - {}
 RESULT: {}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/element - {"using":"css selector","value":"#site-nav-cars-menu-section-panel-1 a[href=\"/intl/v/cars/s90-hybrid\"]"}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/element - {"using":"css selector","value":"#site-nav-cars-menu-section-panel-1 a[href=\"/intl/v/cars/s90-hybrid\"]"}
 RESULT: {"using":"css selector","value":"#site-nav-cars-menu-section-panel-1 a[href=\"/intl/v/cars/s90-hybrid\"]"}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/element - {"using":"css selector","value":"#site-nav-cars-menu-section-panel-1 a[href=\"/intl/v/cars/s90-hybrid\"]"}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/element - {"using":"css selector","value":"#site-nav-cars-menu-section-panel-1 a[href=\"/intl/v/cars/s90-hybrid\"]"}
 RESULT: {"using":"css selector","value":"#site-nav-cars-menu-section-panel-1 a[href=\"/intl/v/cars/s90-hybrid\"]"}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/element - {"using":"css selector","value":"#site-nav-cars-menu-section-panel-1 a[href=\"/intl/v/cars/s90-hybrid\"]"}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/element - {"using":"css selector","value":"#site-nav-cars-menu-section-panel-1 a[href=\"/intl/v/cars/s90-hybrid\"]"}
 RESULT: {"using":"css selector","value":"#site-nav-cars-menu-section-panel-1 a[href=\"/intl/v/cars/s90-hybrid\"]"}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9ce14428-638f-414e-a868-73e5e736fbe9","ELEMENT":"9ce14428-638f-414e-a868-73e5e736fbe9"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9ce14428-638f-414e-a868-73e5e736fbe9","ELEMENT":"9ce14428-638f-414e-a868-73e5e736fbe9"}]}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5149 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9ce14428-638f-414e-a868-73e5e736fbe9","ELEMENT":"9ce14428-638f-414e-a868-73e5e736fbe9"}]}
-RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5149 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9ce14428-638f-414e-a868-73e5e736fbe9","ELEMENT":"9ce14428-638f-414e-a868-73e5e736fbe9"}]}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/element - {"using":"css selector","value":"#site-nav-cars-menu-section-panel-1 a[href=\"/intl/v/cars/s90-hybrid\"]"}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"71ef462f-b924-4f83-b308-1c3f169db4e0","ELEMENT":"71ef462f-b924-4f83-b308-1c3f169db4e0"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"71ef462f-b924-4f83-b308-1c3f169db4e0","ELEMENT":"71ef462f-b924-4f83-b308-1c3f169db4e0"}]}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5149 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"71ef462f-b924-4f83-b308-1c3f169db4e0","ELEMENT":"71ef462f-b924-4f83-b308-1c3f169db4e0"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5149 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"71ef462f-b924-4f83-b308-1c3f169db4e0","ELEMENT":"71ef462f-b924-4f83-b308-1c3f169db4e0"}]}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/element - {"using":"css selector","value":"#site-nav-cars-menu-section-panel-1 a[href=\"/intl/v/cars/s90-hybrid\"]"}
 RESULT: {"using":"css selector","value":"#site-nav-cars-menu-section-panel-1 a[href=\"/intl/v/cars/s90-hybrid\"]"}
-COMMAND: GET /session/e70a0c50d7ed84a07fccdb360ca439f9/element/9ce14428-638f-414e-a868-73e5e736fbe9/attribute/href - {}
+COMMAND: GET /session/705c97b5a0cf4e9ed4a25aae0c4126f4/element/71ef462f-b924-4f83-b308-1c3f169db4e0/attribute/href - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.92_0_4515_159.macosx.Volvo buy hybrid car testing" name="check buy xc90 by Our cars entry" time="0.224">
+    <testcase classname="chrome.92_0_4515_159.macosx.Volvo buy hybrid car testing" name="check buy xc90 by Our cars entry" time="0.656">
       <system-out><![CDATA[
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
 RESULT: {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ce62b1a7-4481-49bb-bdfb-de38b1dbd027","ELEMENT":"ce62b1a7-4481-49bb-bdfb-de38b1dbd027"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ce62b1a7-4481-49bb-bdfb-de38b1dbd027","ELEMENT":"ce62b1a7-4481-49bb-bdfb-de38b1dbd027"}]}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1ff9214b-4aac-4c95-a4a8-0837df7611bb","ELEMENT":"1ff9214b-4aac-4c95-a4a8-0837df7611bb"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1ff9214b-4aac-4c95-a4a8-0837df7611bb","ELEMENT":"1ff9214b-4aac-4c95-a4a8-0837df7611bb"}]}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
 RESULT: {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/elements - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/elements - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
 RESULT: {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
 RESULT: {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/element/ce62b1a7-4481-49bb-bdfb-de38b1dbd027/click - {}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/element/1ff9214b-4aac-4c95-a4a8-0837df7611bb/click - {}
 RESULT: {}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/element - {"using":"css selector","value":"#site-nav-cars-menu-section-panel-1 a[href=\"/intl/v/cars/s60-hybrid\"]"}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/element - {"using":"css selector","value":"#site-nav-cars-menu-section-panel-1 a[href=\"/intl/v/cars/s60-hybrid\"]"}
 RESULT: {"using":"css selector","value":"#site-nav-cars-menu-section-panel-1 a[href=\"/intl/v/cars/s60-hybrid\"]"}
-COMMAND: GET /session/e70a0c50d7ed84a07fccdb360ca439f9/element/35c1e385-1470-48b5-8b52-795cb2bd52f9/attribute/href - {}
+COMMAND: GET /session/705c97b5a0cf4e9ed4a25aae0c4126f4/element/4592b10c-faa1-48a1-9526-3cc915e8769b/attribute/href - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.92_0_4515_159.macosx.Volvo buy hybrid car testing" name="check buy xc90 by Our cars entry" time="0.199">
+    <testcase classname="chrome.92_0_4515_159.macosx.Volvo buy hybrid car testing" name="check buy xc90 by Our cars entry" time="0.493">
       <system-out><![CDATA[
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
 RESULT: {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ce62b1a7-4481-49bb-bdfb-de38b1dbd027","ELEMENT":"ce62b1a7-4481-49bb-bdfb-de38b1dbd027"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ce62b1a7-4481-49bb-bdfb-de38b1dbd027","ELEMENT":"ce62b1a7-4481-49bb-bdfb-de38b1dbd027"}]}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1ff9214b-4aac-4c95-a4a8-0837df7611bb","ELEMENT":"1ff9214b-4aac-4c95-a4a8-0837df7611bb"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1ff9214b-4aac-4c95-a4a8-0837df7611bb","ELEMENT":"1ff9214b-4aac-4c95-a4a8-0837df7611bb"}]}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
 RESULT: {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/elements - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/elements - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
 RESULT: {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
 RESULT: {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/element/ce62b1a7-4481-49bb-bdfb-de38b1dbd027/click - {}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/element/1ff9214b-4aac-4c95-a4a8-0837df7611bb/click - {}
 RESULT: {}
-COMMAND: POST /session/e70a0c50d7ed84a07fccdb360ca439f9/element - {"using":"css selector","value":"#site-nav-cars-menu-section-panel-1 a[href=\"/intl/v/cars/xc90-hybrid\"]"}
+COMMAND: POST /session/705c97b5a0cf4e9ed4a25aae0c4126f4/element - {"using":"css selector","value":"#site-nav-cars-menu-section-panel-1 a[href=\"/intl/v/cars/xc90-hybrid\"]"}
 RESULT: {"using":"css selector","value":"#site-nav-cars-menu-section-panel-1 a[href=\"/intl/v/cars/xc90-hybrid\"]"}
-COMMAND: GET /session/e70a0c50d7ed84a07fccdb360ca439f9/element/04aff4ec-85ca-4ffb-80bd-192acb4465f2/attribute/href - {}
+COMMAND: GET /session/705c97b5a0cf4e9ed4a25aae0c4126f4/element/323e14c9-cb49-44f9-a038-1a7f967768cc/attribute/href - {}
 RESULT: {}
-COMMAND: DELETE /session/e70a0c50d7ed84a07fccdb360ca439f9 - {}
+COMMAND: DELETE /session/705c97b5a0cf4e9ed4a25aae0c4126f4 - {}
 RESULT: {}
 ]]></system-out>
     </testcase>

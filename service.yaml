@@ -1,0 +1,23 @@
+apiVersion: v1
+
+  kind: Service
+
+  metadata:
+
+    name: wedriverio-srv   #k8s service name
+
+  spec:
+
+    selector:
+
+      app: selenium-hub
+
+    ports:
+
+      - port: 4444
+
+          nodePort: 30001     #node port
+
+          type: NodePort
+
+          sessionAffinity: None

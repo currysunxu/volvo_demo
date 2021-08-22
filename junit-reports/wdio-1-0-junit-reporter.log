@@ -1,103 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Volvo buy hybrid car c40" timestamp="2021-08-21T23:39:00" time="4.227" tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="Volvo buy hybrid car c40" timestamp="2021-08-22T01:03:11" time="7.17" tests="1" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="Volvo buy hybrid car c40"/>
       <property name="capabilities" value="chrome.92_0_4515_159.macosx"/>
       <property name="file" value="./test/specs/volvo.buy.electric.car.e2e.js"/>
     </properties>
-    <testcase classname="chrome.92_0_4515_159.macosx.Volvo buy hybrid car c40" name="check buy c40 by Our cars entry" time="4.207">
+    <testcase classname="chrome.92_0_4515_159.macosx.Volvo buy hybrid car c40" name="check buy c40 by Our cars entry" time="7.149">
       <system-out><![CDATA[
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
 RESULT: {}
 RESULT: {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/elements - {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/elements - {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
+RESULT: {"using":"css selector","value":"button[title=\"Accept\"]"}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/elements - {"using":"css selector","value":"button[title=\"Accept\"]"}
 RESULT: {"url":"https://www.volvocars.com/intl/v/car-safety/a-million-more"}
 RESULT: {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"d6826d3e-2845-42c6-8e3f-0b8bf6368410","ELEMENT":"d6826d3e-2845-42c6-8e3f-0b8bf6368410"}]}
-RESULT: {"using":"css selector","value":"button[title=\"Accept\"]"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element/19c03140-1b7a-4f6c-b22a-ebc71753c330/click - {}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"552b35f6-3e19-487e-90b1-1591b2875d36","ELEMENT":"552b35f6-3e19-487e-90b1-1591b2875d36"}]}
 RESULT: {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"d6826d3e-2845-42c6-8e3f-0b8bf6368410","ELEMENT":"d6826d3e-2845-42c6-8e3f-0b8bf6368410"}]}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
+RESULT: {"using":"css selector","value":"button[title=\"Accept\"]"}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element - {"using":"css selector","value":"button[title=\"Accept\"]"}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"552b35f6-3e19-487e-90b1-1591b2875d36","ELEMENT":"552b35f6-3e19-487e-90b1-1591b2875d36"}]}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
+RESULT: {"using":"css selector","value":"button[title=\"Accept\"]"}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element/516975e0-c7b0-40b3-a5a8-2546d7fa5e8c/click - {}
+RESULT: {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/elements - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
 RESULT: {}
 RESULT: {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/elements - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
 RESULT: {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-RESULT: {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element/d6826d3e-2845-42c6-8e3f-0b8bf6368410/click - {}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element/552b35f6-3e19-487e-90b1-1591b2875d36/click - {}
 RESULT: {}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element - {"using":"xpath","value":"//*[@id=\"site-nav-cars-menu-section-tab-0\"]/h2"}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element - {"using":"xpath","value":"//*[@id=\"site-nav-cars-menu-section-tab-0\"]/h2"}
 RESULT: {"using":"xpath","value":"//*[@id=\"site-nav-cars-menu-section-tab-0\"]/h2"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/elements - {"using":"xpath","value":"//*[@id=\"site-nav-cars-menu-section-tab-0\"]/h2"}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/elements - {"using":"xpath","value":"//*[@id=\"site-nav-cars-menu-section-tab-0\"]/h2"}
 RESULT: {"using":"xpath","value":"//*[@id=\"site-nav-cars-menu-section-tab-0\"]/h2"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/elements - {"using":"xpath","value":"//*[@id=\"site-nav-cars-menu-section-tab-0\"]/h2"}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/elements - {"using":"xpath","value":"//*[@id=\"site-nav-cars-menu-section-tab-0\"]/h2"}
 RESULT: {"using":"xpath","value":"//*[@id=\"site-nav-cars-menu-section-tab-0\"]/h2"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element - {"using":"xpath","value":"//*[@id=\"site-nav-cars-menu-section-tab-0\"]/h2"}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element - {"using":"xpath","value":"//*[@id=\"site-nav-cars-menu-section-tab-0\"]/h2"}
 RESULT: {"using":"xpath","value":"//*[@id=\"site-nav-cars-menu-section-tab-0\"]/h2"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element/626a032e-4332-47d1-815a-34d093df62ad/click - {}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element/48d24e95-5032-4b47-b22a-5a976cb58907/click - {}
 RESULT: {}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element - {"using":"css selector","value":"#site-nav-cars-menu-section-panel-0 a[href=\"/intl/v/cars/c40-electric\"]"}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element - {"using":"css selector","value":"#site-nav-cars-menu-section-panel-0 a[href=\"/intl/v/cars/c40-electric\"]"}
 RESULT: {"using":"css selector","value":"#site-nav-cars-menu-section-panel-0 a[href=\"/intl/v/cars/c40-electric\"]"}
-COMMAND: GET /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element/1b7fcd1f-4653-4a17-8db7-3770645cfa2a/attribute/href - {}
+COMMAND: GET /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element/3716a336-f8a2-490c-8ca4-33cd6c405669/attribute/href - {}
 RESULT: {}
-COMMAND: DELETE /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/cookie - {}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element - {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element - {"using":"css selector","value":"button[title=\"Accept\"]"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/url - {"url":"https://www.volvocars.com/intl/v/car-safety/a-million-more"}
+COMMAND: DELETE /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/cookie - {}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element - {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element - {"using":"css selector","value":"button[title=\"Accept\"]"}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/url - {"url":"https://www.volvocars.com/intl/v/car-safety/a-million-more"}
 ]]></system-out>
     </testcase>
   </testsuite>
-  <testsuite name="Volvo buy hybrid car xc40" timestamp="2021-08-21T23:39:04" time="3.724" tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="Volvo buy hybrid car xc40" timestamp="2021-08-22T01:03:19" time="2.664" tests="1" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="Volvo buy hybrid car xc40"/>
       <property name="capabilities" value="chrome.92_0_4515_159.macosx"/>
       <property name="file" value="./test/specs/volvo.buy.electric.car.e2e.js"/>
     </properties>
-    <testcase classname="chrome.92_0_4515_159.macosx.Volvo buy hybrid car xc40" name="check buy xc40 by Our cars entry" time="3.713">
+    <testcase classname="chrome.92_0_4515_159.macosx.Volvo buy hybrid car xc40" name="check buy xc40 by Our cars entry" time="2.653">
       <system-out><![CDATA[
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
 RESULT: {}
 RESULT: {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/elements - {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/elements - {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
 RESULT: {"using":"css selector","value":"button[title=\"Accept\"]"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element/19c03140-1b7a-4f6c-b22a-ebc71753c330/click - {}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element/516975e0-c7b0-40b3-a5a8-2546d7fa5e8c/click - {}
 RESULT: {"url":"https://www.volvocars.com/intl/v/car-safety/a-million-more"}
 RESULT: {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"c94bab54-6e58-432b-ae25-79ee68dafbe7","ELEMENT":"c94bab54-6e58-432b-ae25-79ee68dafbe7"}]}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"0ce4e13d-c3e1-4253-a152-c881abf15774","ELEMENT":"0ce4e13d-c3e1-4253-a152-c881abf15774"}]}
 RESULT: {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element - {"using":"css selector","value":"button[title=\"Accept\"]"}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"c94bab54-6e58-432b-ae25-79ee68dafbe7","ELEMENT":"c94bab54-6e58-432b-ae25-79ee68dafbe7"}]}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element - {"using":"css selector","value":"button[title=\"Accept\"]"}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"0ce4e13d-c3e1-4253-a152-c881abf15774","ELEMENT":"0ce4e13d-c3e1-4253-a152-c881abf15774"}]}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
 RESULT: {"using":"css selector","value":"button[title=\"Accept\"]"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element/19c03140-1b7a-4f6c-b22a-ebc71753c330/click - {}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element/516975e0-c7b0-40b3-a5a8-2546d7fa5e8c/click - {}
 RESULT: {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/elements - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element - {"using":"css selector","value":"button[title=\"Accept\"]"}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/elements - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element - {"using":"css selector","value":"button[title=\"Accept\"]"}
 RESULT: {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
 RESULT: {"using":"css selector","value":"button[title=\"Accept\"]"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element/5ccb600d-66a2-4d63-83b1-edbf505264df/click - {}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element/1611fdbb-4f15-4b4d-b918-8e82ee24a362/click - {}
 RESULT: {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element/c94bab54-6e58-432b-ae25-79ee68dafbe7/click - {}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element/0ce4e13d-c3e1-4253-a152-c881abf15774/click - {}
 RESULT: {}
 RESULT: {}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
 RESULT: {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/elements - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/elements - {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
 RESULT: {"using":"css selector","value":"span[data-testid=\"nav:carsLabelContainer\"]"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element - {"using":"xpath","value":"//*[@id=\"site-nav-cars-menu-section-tab-0\"]/h2"}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element - {"using":"xpath","value":"//*[@id=\"site-nav-cars-menu-section-tab-0\"]/h2"}
 RESULT: {"using":"xpath","value":"//*[@id=\"site-nav-cars-menu-section-tab-0\"]/h2"}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element/2cbde1a2-920a-4853-a0b9-e076c64689f8/click - {}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element/7e2626c6-80ac-4173-baf4-0cf3ba329a0c/click - {}
 RESULT: {}
-COMMAND: POST /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element - {"using":"css selector","value":"#site-nav-cars-menu-section-panel-0 a[href=\"/intl/v/cars/xc40-electric\"]"}
+COMMAND: POST /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element - {"using":"css selector","value":"#site-nav-cars-menu-section-panel-0 a[href=\"/intl/v/cars/xc40-electric\"]"}
 RESULT: {"using":"css selector","value":"#site-nav-cars-menu-section-panel-0 a[href=\"/intl/v/cars/xc40-electric\"]"}
-COMMAND: GET /session/2b82af1a4bbd8bc2a3e9815209d4c5cb/element/930b8046-095e-4782-849d-f08198569ae4/attribute/href - {}
+COMMAND: GET /session/ddbb0a85c1c90824c38f0c99f1bcc9b4/element/614a24a7-07d6-46db-96e9-1bc4ab7245f6/attribute/href - {}
 RESULT: {}
-COMMAND: DELETE /session/2b82af1a4bbd8bc2a3e9815209d4c5cb - {}
+COMMAND: DELETE /session/ddbb0a85c1c90824c38f0c99f1bcc9b4 - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
