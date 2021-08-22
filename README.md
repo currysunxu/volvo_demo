@@ -59,8 +59,7 @@ docker run -it mydemo
 
 -   define spec, junit , allure report
 
-##
-Kubernetes distribute testing
+## Kubernetes distribute testing (just idea)
 To run command by kubectl to depoly hub and nodes and need to adjust hubUrl in test
 -   kubectl create -f deploy.yml
 -   kubectl describe deploy
