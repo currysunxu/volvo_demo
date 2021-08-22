@@ -8,10 +8,11 @@ These tests are developed in JavaScript with [WebDriverIO V7](http://webdriver.i
 
 -   JavaScript
 -   Build Docker image by Dockfile
--   Parallel execution
+-   Parallel execution by maxInstances in wdio.conf.js
 -   Page Object Pattern
 -   Test report suporrt Spec,Junit,Allure
 -   Kubernetes selenium Grid (just idea)
+-   wdio-image-comparison (just idea)
 
 ## Framework Structure
 
@@ -20,6 +21,7 @@ These tests are developed in JavaScript with [WebDriverIO V7](http://webdriver.i
 -   define test case in specs
 -   define dokcerfile
 -   define maxInstances and capabilities to run test parallel with different browser
+-   define visual-regression (just idea)
 
 
 

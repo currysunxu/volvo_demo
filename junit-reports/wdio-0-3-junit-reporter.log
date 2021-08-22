@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Volvo image comparsion" timestamp="2021-08-22T17:15:57" time="0.018" tests="2" failures="2" errors="2" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Volvo image comparsion"/>
+      <property name="capabilities" value="chromeheadless.92_0_4515_159.darwin"/>
+      <property name="file" value="./test/visual-regression/volvo.visual.regressioni.js"/>
+    </properties>
+    <testcase classname="chromeheadless.92_0_4515_159.darwin.Volvo image comparsion" name="should save some screenshots" time="0.005">
+      <failure/>
+      <error message="browser.saveElement is not a function"/>
+      <system-out><![CDATA[
+COMMAND: deleteAllCookies - {}
+]]></system-out>
+      <system-err><![CDATA[
+TypeError: browser.saveElement is not a function
+    at Context.<anonymous> (/Users/ef/Documents/RegressionCase/volvo_ui_automation/test/visual-regression/volvo.visual.regressioni.js:15:17)
+    at Context.executeAsync (/Users/ef/Documents/RegressionCase/volvo_ui_automation/node_modules/@wdio/utils/build/shim.js:285:25)
+    at Context.testFrameworkFnWrapper (/Users/ef/Documents/RegressionCase/volvo_ui_automation/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)
+]]></system-err>
+    </testcase>
+    <testcase classname="chromeheadless.92_0_4515_159.darwin.Volvo image comparsion" name="should compare successful with a baseline" time="0.004">
+      <failure/>
+      <error message="browser.checkElement is not a function"/>
+      <system-out><![CDATA[
+COMMAND: findElement - {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
+COMMAND: findElement - {"using":"css selector","value":"button[title=\"Accept\"]"}
+COMMAND: navigateTo - {"url":"https://www.volvocars.com/intl/v/car-safety/a-million-more"}
+COMMAND: takeScreenshot - {}
+COMMAND: findElement - {"using":"css selector","value":"#site-nav-topbar-wrapper  a"}
+RESULT: undefined
+RESULT: undefined
+COMMAND: findElement - {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
+COMMAND: findElement - {"using":"css selector","value":"button[title=\"Accept\"]"}
+COMMAND: findElement - {"using":"css selector","value":"button[title=\"Cookie Settings\"]"}
+COMMAND: findElement - {"using":"css selector","value":"button[title=\"Accept\"]"}
+COMMAND: navigateTo - {"url":"https://www.volvocars.com/intl/v/car-safety/a-million-more"}
+COMMAND: takeScreenshot - {}
+COMMAND: findElement - {"using":"css selector","value":"#element-id"}
+COMMAND: deleteSession - {}
+COMMAND: findElement - {"using":"css selector","value":"#site-nav-topbar-wrapper  a"}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+TypeError: browser.checkElement is not a function
+    at Context.<anonymous> (/Users/ef/Documents/RegressionCase/volvo_ui_automation/test/visual-regression/volvo.visual.regressioni.js:25:24)
+    at Context.executeAsync (/Users/ef/Documents/RegressionCase/volvo_ui_automation/node_modules/@wdio/utils/build/shim.js:285:25)
+    at Context.testFrameworkFnWrapper (/Users/ef/Documents/RegressionCase/volvo_ui_automation/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

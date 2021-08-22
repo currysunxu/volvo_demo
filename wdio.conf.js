@@ -4,6 +4,8 @@ exports.config = {
 
     specs: [
         './test/specs/**/*.js'
+        // Bonus image-comparison
+        // './test/visual-regression/**/*.js'
     ],
     exclude: [
         // 'path/to/excluded/files'
@@ -49,6 +51,16 @@ exports.config = {
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: ['chromedriver'],
+            /*['image-comparison',
+            {
+                baselineFolder: './screenshots/reference/',
+                formatImageName: '{tag}-{logName}-{width}x{height}',
+                screenshotPath: './screenshots/',
+                savePerInstance: true,
+                autoSaveBaseline: true,
+                blockOutStatusBar: true,
+                blockOutToolBar: true,
+            }]*/
 
     framework: 'mocha',
 
@@ -108,7 +120,7 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {<Object>} results object containing test results
      */
-    afterTest: function(test, context, { error, result, duration, passed, retries }) {
+    afterTest: function (test, context, {error, result, duration, passed, retries}) {
         if (error !== undefined) {
             try {
                 browser.takeScreenshot();

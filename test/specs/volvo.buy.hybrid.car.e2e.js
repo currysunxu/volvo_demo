@@ -15,7 +15,6 @@ describe('Volvo buy hybrid car testing', () => {
         await HomePage.headerOurCars.waitForDisplayed()
         await expect(HomePage.headerOurCars).toBeExisting()
         await HomePage.headerOurCars.click()
-        await expect(HomePage.hybrid_car_s90).toBeClickable()
         await expect(HomePage.hybrid_car_s90).toHaveHrefContaining("/intl/v/cars/s90-hybrid")
     });
 
