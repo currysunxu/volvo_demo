@@ -16,13 +16,17 @@ These tests are developed in JavaScript with [WebDriverIO V7](http://webdriver.i
 
 ## Framework Structure
 
+   ![Image text](https://raw.githubusercontent.com/currysunxu/volvo_demo/main/images/project_struture.png) 
+
+-   test directory include pages and specs    
 -   page.js encapsulate common locators and functions
 -   cars.page and home.page inherit from page
 -   define test case in specs
--   define dockerfile
+-   define dockerfile to build docker image
 -   define maxInstances and capabilities to run test parallel with different browser
 -   define visual-regression (just idea)
-
+-   define k8s yaml files by deploy.yaml service.yaml volvo_webdriverio_chrome.yaml volvo_webdriverio_firefox.yaml
+    
 
 
 ## Requirements
@@ -58,15 +62,16 @@ docker run -it mydemo
 ## Reports
 Define reporter in wdio.conf.js, currently configuration support spec,junit,allure report
 -   define spec
-    
+    ![Image text](https://raw.githubusercontent.com/currysunxu/volvo_demo/main/images/spec_report.png) 
 -   allure report
     The results can be consumed by any of the reporting tools offered by Allure. For example:
     https://www.npmjs.com/package/allure-commandline
     
+    ![Image text](https://raw.githubusercontent.com/currysunxu/volvo_demo/main/images/allure_report.png)
 -   junit
     A WebdriverIO reporter that creates Jenkins compatible XML based JUnit reports
     Usually, junit xml reports combine with CI (Jenkins)
-    
+    ![Image text](https://raw.githubusercontent.com/currysunxu/volvo_demo/main/images/jenkins-postjob-junit.png)
     
 
 ## Kubernetes distribute testing
@@ -79,4 +84,6 @@ To run command by kubectl to depoly hub and nodes and need to adjust hubUrl in t
 -   kubectl create -f repff.yml
 
 
+## CI/CD
+(TBD) To create docker-compose file to manage the docker images with Jenkins.
 
