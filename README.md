@@ -19,7 +19,7 @@ These tests are developed in JavaScript with [WebDriverIO V7](http://webdriver.i
 -   page.js encapsulate common locators and functions
 -   cars.page and home.page inherit from page
 -   define test case in specs
--   define dokcerfile
+-   define dockerfile
 -   define maxInstances and capabilities to run test parallel with different browser
 -   define visual-regression (just idea)
 
@@ -30,7 +30,6 @@ These tests are developed in JavaScript with [WebDriverIO V7](http://webdriver.i
 -   node >= 14.x.x 
 -   npm >= 6.14.x  
 -   yarn >= 1.22.x
--   chrome == 84.0.x
 
 ## Getting Started
 
@@ -57,10 +56,20 @@ Run docker image:
 docker run -it mydemo
 ```
 ## Reports
+Define reporter in wdio.conf.js, currently configuration support spec,junit,allure report
+-   define spec
+    
+-   allure report
+    The results can be consumed by any of the reporting tools offered by Allure. For example:
+    https://www.npmjs.com/package/allure-commandline
+    
+-   junit
+    A WebdriverIO reporter that creates Jenkins compatible XML based JUnit reports
+    Usually, junit xml reports combine with CI (Jenkins)
+    
+    
 
--   define spec, junit , allure report
-
-## Kubernetes distribute testing (just idea)
+## Kubernetes distribute testing
 To run command by kubectl to depoly hub and nodes and need to adjust hubUrl in test
 -   kubectl create -f deploy.yml
 -   kubectl describe deploy

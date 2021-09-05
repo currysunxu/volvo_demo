@@ -22,7 +22,7 @@ describe('Volvo image comparsion', () => {
     it('should compare successful with a baseline', () => {
 
         // Check an element
-        expect(browser.checkElement($('#element-id'), 'volvo logo Elementt', { /* some options */ })).toEqual(0);
+        expect(browser.checkElement($('#element-id'), 'volvo logo Element', { /* some options */ })).toEqual(0);
 
         // Check a full page screenshot
         expect(browser.checkFullPageScreen('volvoFullPage', { /* some options */ })).toEqual(0);

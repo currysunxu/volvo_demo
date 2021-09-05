@@ -1,4 +1,4 @@
-const allure = require('@wdio/allure-reporter').default;
+// const allure = require('@wdio/allure-reporter').default;
 
 exports.config = {
 
@@ -12,11 +12,11 @@ exports.config = {
     ],
 
     // parallel execution setting
-    maxInstances: 5,
+    maxInstances: 3,
 
     //set multiple capabilities ,like chrome,firefox,safari
     capabilities: [{
-        maxInstances: 2,
+        maxInstances: 1,
         browserName: 'chrome',
         acceptInsecureCerts: true,
         'goog:chromeOptions': {
@@ -37,11 +37,11 @@ exports.config = {
     baseUrl: 'https://www.volvocars.com',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 5000,
+    waitforTimeout: 8000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
-    connectionRetryTimeout: 8000,
+    connectionRetryTimeout: 10000,
     //
     // Default request retries count
     connectionRetryCount: 3,
@@ -86,9 +86,9 @@ exports.config = {
      * @param {Array.<String>} specs        List of spec file paths that are to be run
      * @param {Object}         browser      instance of created browser/device session
      */
-    before: function (capabilities, specs) {
-        global.allure = allure;
-    },
+    // before: function (capabilities, specs) {
+    //     global.allure = allure;
+    // },
     /**
      * Runs before a WebdriverIO command gets executed.
      * @param {String} commandName hook command name
@@ -100,18 +100,18 @@ exports.config = {
      * Hook that gets executed before the suite starts
      * @param {Object} suite suite details
      */
-    beforeSuite: function (suite) {
-        allure.addFeature(suite.name);
-    },
+    // beforeSuite: function (suite) {
+    //     allure.addFeature(suite.name);
+    // },
     /**
      * Function to be executed before a test (in Mocha/Jasmine) starts.
      */
-    beforeTest: function (test, context) {
-        allure.addEnvironment("BROWSER", browser.capabilities.browserName);
-        allure.addEnvironment("BROWSER_VERSION", browser.capabilities.version);
-        allure.addEnvironment("PLATFORM", browser.capabilities.platform);
-
-    },
+    // beforeTest: function (test, context) {
+    //     allure.addEnvironment("BROWSER", browser.capabilities.browserName);
+    //     allure.addEnvironment("BROWSER_VERSION", browser.capabilities.version);
+    //     allure.addEnvironment("PLATFORM", browser.capabilities.platform);
+    //
+    // },
     /**
      * Gets executed after all workers got shut down and the process is about to exit. An error
      * thrown in the onComplete hook will result in the test run failing.

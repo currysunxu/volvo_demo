@@ -25,4 +25,11 @@ module.exports = class Page {
     accept_submit () {
         return this.accept.click();
     }
+
+    sleep(delay) {
+        var start = (new Date()).getTime();
+        while ((new Date()).getTime() - start < delay) {
+            continue;
+        }
+    }
 }
