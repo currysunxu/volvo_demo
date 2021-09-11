@@ -24,6 +24,8 @@ These tests are developed in JavaScript with [WebDriverIO V7](http://webdriver.i
 -   define test case in specs
 -   define dockerfile to build docker image
 -   define maxInstances and capabilities to run test parallel with different browser
+        i  wdio support to execute multiple browsers by specific suites,like
+        ii yarn wdio ./wdio.conf.js --suite ui --suite campaign
 -   define visual-regression (just idea)
 -   define k8s yaml files by deploy.yaml service.yaml volvo_webdriverio_chrome.yaml volvo_webdriverio_firefox.yaml
     

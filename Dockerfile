@@ -15,4 +15,4 @@ ADD . /app
 
 RUN yarn install --ignore-engines
 
-CMD yarn wdio ./wdio.conf.js --spec volvo.campaign.js volvo.ui.js
+CMD yarn wdio ./wdio.conf.js --suite ui --suite campaign

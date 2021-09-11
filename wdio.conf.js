@@ -7,16 +7,28 @@ exports.config = {
         // Bonus image-comparison
         // './test/visual-regression/**/*.js'
     ],
+    suites: {
+        campaign: [
+            './test/specs/volvo.campaign.js'
+        ],
+        ui: [
+            './test/specs/volvo.ui.js'
+        ],
+        e2e:[
+            './test/specs/volvo.buy.electric.car.e2e.js',
+            './test/specs/volvo.buy.hybrid.car.e2e.js'
+        ]
+    },
     exclude: [
         // 'path/to/excluded/files'
     ],
 
     // parallel execution setting
-    maxInstances: 3,
+    maxInstances: 10,
 
     //set multiple capabilities ,like chrome,firefox,safari
     capabilities: [{
-        maxInstances: 1,
+        maxInstances: 2,
         browserName: 'chrome',
         acceptInsecureCerts: true,
         'goog:chromeOptions': {
@@ -51,16 +63,16 @@ exports.config = {
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: ['chromedriver'],
-            /*['image-comparison',
-            {
-                baselineFolder: './screenshots/reference/',
-                formatImageName: '{tag}-{logName}-{width}x{height}',
-                screenshotPath: './screenshots/',
-                savePerInstance: true,
-                autoSaveBaseline: true,
-                blockOutStatusBar: true,
-                blockOutToolBar: true,
-            }]*/
+    /*['image-comparison',
+    {
+        baselineFolder: './screenshots/reference/',
+        formatImageName: '{tag}-{logName}-{width}x{height}',
+        screenshotPath: './screenshots/',
+        savePerInstance: true,
+        autoSaveBaseline: true,
+        blockOutStatusBar: true,
+        blockOutToolBar: true,
+    }]*/
 
     framework: 'mocha',
 
